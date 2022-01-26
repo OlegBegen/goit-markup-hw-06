@@ -43,8 +43,7 @@
           <a href="mailto:info@devstudio.com" class="a-link"
             > <svg class="envelope-svg">
               <use href="./images/sprit1.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a
-          >
+            </svg>info@devstudio.com</a>
         </li>
         <li class="phone">
           <a href="tel:+380961111111" class="a-link"> <svg class="phone-svg">
@@ -79,9 +78,7 @@
         <div class="container">
           <div class="we-general">
         <ul class="site-we list">
-          
           <li class="we-item icon-antenna">
-           
               <div class="we-item-icon">
                 <svg class="we-icon" width="70" height="70">
                   <use href="./images/sprit1.svg#icon-antenna"></use>
@@ -106,13 +103,11 @@
             </p>
           </li>
           <li class="we-item icon-diagram">
-         
               <div class="we-item-icon">
                 <svg class="we-icon" width="70" height="70">
                   <use href="./images/sprit1.svg#icon-diagram"></use>
                 </svg>
               </div>
-            
             <h3 class="we-title">Планування</h3>
             <p class="we-text">
               Планирование Равным образом консультация с широким активом в
@@ -120,13 +115,11 @@
             </p>
           </li>
           <li class="we-item icon-astronaut">
-        
               <div class="we-item-icon">
                 <svg class="we-icon" width="70" height="70">
                   <use href="./images/sprit1.svg#icon-astronaut"></use>
                 </svg>
               </div>
-            
             <h3 class="we-title">Новітні технології</h3>
             <p class="we-text">
               Современные технологии Значимость этих проблем настолько очевидна,
@@ -338,6 +331,7 @@
         </ul>
         </div>
       </section>
+
       <!-- Наші клієнти -->
       <section class="client">
         <div class="container">
@@ -391,33 +385,38 @@
         </div>
       </section>
     </main>
+
+
     <!-- Футер -->
+<!-- ---------------------FUTTER----------------------------------------------------- -->
+
+
     <footer class="fotter-styles">
       <div class="container">
         <div class="futter">
-        <div class="futter-contact">
-      <a class="logo" href="./index.html"
+          <div class="futter-contact">
+        <a class="logo" href="./index.html"
         >Web<samp class="logo-three">Studio</samp>
-      </a>
-      <div class="fotter-adress">
-      <address class="adsress-styles">м. Київ, пр-т Лесиі Українки, 26</address>
-      <ul class="contact list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="cont-list"
-            >info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="cont-list">+38 096 111 11 11</a>
-        </li>
-      </ul>
-      </div>
-      </div>
-      <div class="futter-sotial">
-        <p class="to-us">ПРИЄДНУЙТЕСЬ</p>
-        <ul class="futter-sotial-item list">
+        </a>
+          <div class="fotter-adress">
+          <address class="adsress-styles">м. Київ, пр-т Лесиі Українки, 26</address>
+          <ul class="contact list">
           <li>
-            <a href="" class="sotial-icon">
-              <svg class="icon-name">
+            <a href="mailto:info@devstudio.com" class="cont-list"
+            >info@devstudio.com</a>
+          </li>
+          <li>
+          <a href="tel:+380961111111" class="cont-list">+38 096 111 11 11</a>
+            </li>
+          </ul>
+      </div>
+      </div>
+        <div class="futter-sotial">
+          <p class="to-us">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="futter-sotial-item list">
+              <li>
+                <a href="" class="sotial-icon">
+                <svg class="icon-name">
                 <use href="./images/sprit.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -441,17 +440,28 @@
               <svg class="icon-name">
                 <use href="./images/sprit.svg#icon-linkedin"></use>
               </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      </div>
-      </div>
-    </footer>
-    <!-- БЕКДРОП -->
-
-
-<!-- button close -->
+              </a>
+            </li>
+          </ul>
+        </div>
+          <div class="futter-rossylka">
+          <p class="to-us">підпишись на розсилку</p>
+            <form class="rossylka">
+              <input type="email" name="mail" id="mail" placeholder="E-mail">
+              <label for="mail"></label>
+              <button type="submit">
+              <p class="text-send">Підписатись</p>
+              <svg class="icon-send">
+                <use href="images/sprit1.svg#icon-send-1"></use>
+              </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </footer>
+    <!------------------------ БЕКДРОП -------------------------------------------->
+    <!-- button close -->
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -461,11 +471,39 @@
           <use href="./images/sprit1.svg#icon-close-1"></use>
         </svg>
     </div>
+    <form class="modal-form">
+      <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+      <div class="form-general">
+        <div class="form-item">
+          <label for="name" class="form-titles">Імя</label>
+        <input type="name" name="name" id="name">
+        </div>
+        <div class="form-item">
+          <label for="tel" class="form-titles">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+        </div>
+        <div class="form-item">
+          <label for="mail" class="form-titles">Пошта</label>
+          <input type="email" name="mail" id="mail">
+        </div>
+      </div>
+      <div class="form-comments">
+          <label for="comments" class="form-titles">Коментарій</label>
+            <textarea name="commets" id="commets" " rows=" 8" 
+            placeholder="Введіть текст" class="com-title">
+            </textarea>
+      </div>
+      <div class="form-checkbox">
+        <input type="checkbox" name="i-agree">
+        <label class="check-title">Соглашаюсь с рассылкой и принимаю 
+          </label>
+          <a href="" class="check-title-two">Условия договора</a>
+      </div>
+    </form>
+    <button type="submit" class="form-submit">Отправить</button>
   </div>
-  </button>
 </div>
 </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>

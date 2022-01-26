@@ -228,8 +228,7 @@ body {
 .heroe {
   max-width: 1600px;
   height: 600px;
-  /* margin-right: 0;
-  margin-left: 0; */
+
   margin: 0 auto;
 
   background-image: linear-gradient(
@@ -269,7 +268,7 @@ body {
 /* Backdrop */
 .backdrop {
   position: fixed;
-  /* width: 1600px; */
+
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -291,13 +290,6 @@ body {
   background-color: var(--background-heder-);
   transform: translate(-50%, -50%);
 }
-
-/* .modal {
-  margin: 0 auto;
-  position: relative;
-} */
-
-/* button close*/
 
 .button-close {
   position: absolute;
@@ -323,6 +315,98 @@ body {
   height: 30px;
   border-radius: 50%;
   padding: 0;
+}
+
+/* -----------ФОРМА МОДАЛЬНОГО ВІКНА ---------------*/
+
+.modal-form {
+  display: block;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.form-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-general-);
+}
+.form-general {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-titles {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--color-text-);
+  margin-bottom: 4px;
+}
+.form-item input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-comments {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.com-title {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-checkbox {
+  display: inline;
+}
+.check-title {
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+textarea {
+  resize: none;
+}
+
+.form-submit {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 165px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-heder-);
+}
+.form-submit:hover {
+  background: #188ce8;
+  cursor: pointer;
+}
+
+.check-title-two {
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-second-);
+  /* color: #757575; */
 }
 
 /* стилізвція майн */
@@ -545,11 +629,10 @@ body {
   fill: var(--background-button-);
   border: 1px solid var(--background-button-);
 }
-
+/* --------------------------------- ФУТЕР----------------------------------------------- */
 /* стилізація футера */
 
 .fotter-styles {
-  /* max-width: 1600px; */
   width: 100%;
   background-color: var(--background-scond);
   padding-top: 60px;
@@ -591,11 +674,17 @@ body {
 .futter-contact {
   margin-right: 70px;
 }
+
+.futter-sotial {
+  margin-right: 93px;
+}
+
 .to-us {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   color: var(--color-h1-);
+  text-transform: uppercase;
 }
 .futter-sotial-item {
   padding: 0;
@@ -617,6 +706,43 @@ body {
   background-color: var(--background-button-);
 }
 
+.rossylka input {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rossylka button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--background-heder-);
+}
+.text-send {
+  margin-right: 10px;
+}
+.icon-send {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+}
+
+/* ------------------------------PORTFOLIO-------------------------------------- */
 /* стилізація портфоліо */
 
 .portf-main {
@@ -660,8 +786,6 @@ body {
   background-color: var(--background-button-);
   color: var(--background-heder-);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
   border-radius: 4px;
   cursor: pointer;
 }
