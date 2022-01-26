@@ -337,6 +337,7 @@ body {
   margin-bottom: 10px;
 }
 .form-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -348,17 +349,34 @@ body {
   color: var(--color-text-);
   margin-bottom: 4px;
 }
-.form-item input {
+.form-input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
 }
+
+.form-svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 29px;
+  left: 12px;
+}
+
+/* ---коментарі--- */
 .form-comments {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.textarea {
+  color: #000000;
 }
 .com-title {
   width: 448px;
@@ -366,7 +384,10 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 0;
+  color: #000000;
 }
+
 .form-checkbox {
   display: inline;
 }
@@ -406,7 +427,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-second-);
-  /* color: #757575; */
 }
 
 /* стилізвція майн */
