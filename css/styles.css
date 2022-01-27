@@ -308,13 +308,27 @@ body {
   background-color: var(--background-heder-);
   border: var(--background-heder-);
   padding: 0;
+  color: var(--color-general-);
+}
+.close-svg {
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-item:hover {
+  color: var(--color-second-);
+  cursor: pointer;
 }
 
 .close-item {
+  display: flex;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 6px;
 }
 
 /* -----------ФОРМА МОДАЛЬНОГО ВІКНА ---------------*/
@@ -359,6 +373,11 @@ body {
   padding-bottom: 11px;
   padding-left: 42px;
 }
+.form-input:hover,
+.form-input:focus-within {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
 
 .form-svg {
   position: absolute;
@@ -366,6 +385,13 @@ body {
   height: 18px;
   top: 29px;
   left: 12px;
+  fill: var(--color-general-);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus ~ .form-svg,
+.form-input:hover ~ .form-svg {
+  fill: var(--color-second-);
 }
 
 /* ---коментарі--- */
@@ -376,11 +402,13 @@ body {
 }
 
 .textarea {
+  padding: 12px, 16px;
   color: #000000;
 }
 .com-title {
   width: 448px;
   height: 120px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -414,10 +442,13 @@ textarea {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--background-heder-);
+  color: var(--color-h1-);
+
+  transform: var(--background-button-) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-submit:hover {
   background: #188ce8;
+
   cursor: pointer;
 }
 
