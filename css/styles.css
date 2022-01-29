@@ -366,6 +366,7 @@ body {
 .form-input {
   width: 448px;
   height: 40px;
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -373,6 +374,7 @@ body {
   padding-bottom: 11px;
   padding-left: 42px;
 }
+
 .form-input:hover,
 .form-input:focus-within {
   border: 1px solid #2196f3;
@@ -403,29 +405,43 @@ body {
 
 .textarea {
   padding: 12px, 16px;
-  color: #000000;
 }
 .com-title {
   width: 448px;
   height: 120px;
-
+  padding-left: 12px;
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0;
-  color: #000000;
 }
 
-.form-checkbox {
-  display: inline;
+.com-title:focus,
+.com-title:hover {
+  border: 1px solid #2196f3;
 }
-.check-title {
-  margin-left: 8px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+.check {
+  position: relative;
+  padding-left: 24px;
 }
+.check__input {
+  position: absolute;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.check__box {
+  position: absolute;
+  margin-left: -24px;
+  top: 2px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icon_not_check.svg);
+}
+
+.check__input:checked + .check__box {
+  background-image: url(../images/icon_check.svg);
+}
+
 textarea {
   resize: none;
 }
@@ -434,7 +450,7 @@ textarea {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-left: 165px;
+  margin-left: 124px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

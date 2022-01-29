@@ -463,15 +463,15 @@
     <!------------------------ БЕКДРОП -------------------------------------------->
     <!-- button close  -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <div class="button-close">
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="button-close">
       <button class="button-item-main" data-modal-close>
         <svg class="close-item">
           <use href="./images/sprit1.svg#icon-close-svg-1"  class="close-svg"></use>
         </svg>
-    </div>
-    <form class="modal-form">
+      </div>
+      <form class="modal-form">
       <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
       <div class="form-general">
         <div class="form-item">
@@ -496,22 +496,22 @@
             </svg>
         </div>
       </div>
-      <div class="form-comments">
-          <label for="comments" class="form-titles">Коментарій</label>
-            <textarea name="comments" id="comments" rows=" 8" placeholder="Введіть текст" class="com-title">
-            </textarea>
+<label for="coments" class="form-titles">Коментарій
+  <textarea name="coments" id="coments" rows="10" 
+  placeholder="Введіть текст..." class="com-title"></textarea>
+</label>
+<label class="check">
+<input class="check__input" type="checkbox" name="" id="">
+<span class="check__box"></span>
+Соглашаюсь с рассылкой и принимаю
+<a href="" class="check-title-two">Условия договора</a>
+</label>
+      <button type="submit" class="form-submit">Отправить</button>
       </div>
-      <div class="form-checkbox">
-        <input type="checkbox" name="i-agree">
-        <label class="check-title">Соглашаюсь с рассылкой и принимаю 
-          </label>
-          <a href="" class="check-title-two">Условия договора</a>
+      </form>
+    
       </div>
-    </form>
-    <button type="submit" class="form-submit">Отправить</button>
-  </div>
-</div>
-</div>
+      </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
